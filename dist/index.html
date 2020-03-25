@@ -1,24 +1,25 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <title>Restaurant page</title>
 </head>
+
 <body>
-  <div class="content">
-    <div class="tabs">
-      <div class="tab-1">
-        <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-      </div>
-      <div class="tab-2">
-        <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-      </div>
-      <div class="tab-3">
-        <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-      </div>
-    </div>
+  <div class="container">
+    <input class="input-radio" type="radio" name="tabs" checked id="tab-1">
+    <label class="tab-label" for="tab-1">Home</label>
+    <input class="input-radio" type="radio" name="tabs" id="tab-2">
+    <label class="tab-label" for="tab-2">Menu</label>
+    <input class="input-radio" type="radio" name="tabs" id="tab-3">
+    <label class="tab-label" for="tab-3">Contact</label>
+    <div class="content"></div>
   </div>
   <script src="./main.js"></script>
 </body>
+
 </html>
