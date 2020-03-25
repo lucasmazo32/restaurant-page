@@ -53,8 +53,9 @@ const insertContact = () => {
 const tabLogic = () => {
   let currentTab = 1;
   insertHome();
-  tabs.forEach( element => {
-    element.onclick = () => {
+  tabs.forEach((element) => {
+    const tab = element;
+    tab.onclick = () => {
       if (currentTab !== parseFloat(element.id.slice(4))) {
         currentTab = parseFloat(element.id.slice(4));
         contentDiv.innerHTML = '';
@@ -74,4 +75,4 @@ const tabLogic = () => {
   });
 };
 
-export { tabLogic };
+export default tabLogic;
