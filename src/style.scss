@@ -1,0 +1,46 @@
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  max-width: 100%;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.input-radio {
+  display: none;
+}
+
+.tab-label {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 1em 2em;
+  max-width: 33%;
+  &:hover {
+    background-color: cornflowerblue;
+    color: white;
+  }
+}
+
+.input-radio:checked + .tab-label {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    width: 90%;
+  }
+}
